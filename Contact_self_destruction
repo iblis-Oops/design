@@ -1,3 +1,9 @@
+//Used for terminating a contract which means removing it forever from the blockchain..(loan contracts and bidding apps)
+//When a contract has been destroyed there will be two consequences
+//1. Transactions will fail
+//2.Any funds sents to the contract will be lost..
+
+//In ordere to prevent the loss of funds you should remove all reference of dead contracts and/or call get() before sending funds to make sure the contract still exists..
 
 //SPDX-License-Identifier:MIT;
 pragma solidity >=0.6.0<0.9.0;
